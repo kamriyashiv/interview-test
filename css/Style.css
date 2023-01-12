@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*--variables---*/
+/*--mixin---*/
+/*--reuse--Class--*/
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+  gap: 15px;
+}
+
+.relative {
+  position: relative;
+}
+
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Playfair Display", serif;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-4 {
+  width: 40%;
+}
+
+.col-md-8 {
+  width: 60%;
+}
+
+.py {
+  padding: 35px 0px;
+}
+
+.revert {
+  align-items: revert !important;
+}
+
+.btnColor2 {
+  background-color: #3D707F !important;
+}
+
+.btnWhite {
+  background-color: white !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+}
+
+.subHeading {
+  text-align: center;
+}
+.subHeading h2 {
+  font-size: 50px;
+  font-size: 50px;
+  color: #27272A;
+  font-weight: 400;
+}
+
+.aBox a {
+  background-color: #058B71;
+  padding: 18px 25px 18px 34px;
+  color: white;
+  border-radius: 42px;
+  border: none;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.aBox a .iconSet {
+  position: absolute;
+  left: 14px;
+  width: 16px;
+  top: 17px;
+}
+
+/*--Hero-section--css--*/
+.HeroBg {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url("../img/hero.png"), #C4C4C4;
+  background-repeat: no-repeat;
+  height: 796px;
+}
+.HeroBg .mainNav {
+  padding: 40px 0px;
+}
+.HeroBg .mainNav .transprantBtn {
+  background-color: transparent !important;
+  border: 1px solid white !important;
+}
+.HeroBg .heroLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 78vh;
+}
+.HeroBg .heroLine p {
+  text-transform: uppercase;
+  color: white;
+}
+.HeroBg .heroLine h1 {
+  font-size: 72px;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+.HeroBg .heroLine .HeroBtn {
+  margin-top: 20px;
+}
+.HeroBg .heroLine .HeroBtn a {
+  background-color: #3D707F;
+}
+.HeroBg .DownnBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+.HeroBg .DownnBtn a {
+  border: 1px solid white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  border-radius: 57px;
+}
+
+/*--article-2nd-part--*/
+.mainArticleBox .ALeftBox p {
+  color: #058B71;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.mainArticleBox .ALeftBox h2 {
+  font-size: 50px;
+  color: #27272A;
+  font-weight: 400;
+}
+.mainArticleBox .ArightBox p {
+  font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.8;
+  word-spacing: 6px;
+}
+
+/*--slider--area---*/
+.card {
+  margin: 10px 20px;
+  position: relative;
+}
+.card img {
+  max-width: 100%;
+}
+.card h3 {
+  position: absolute;
+  background-color: rgba(61, 112, 127, 0.7411764706);
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-weight: normal;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.slick-prev {
+  left: 30px !important;
+}
+
+.slick-next {
+  right: 40px !important;
+}
+
+.slick-prev, .slick-next {
+  padding: 37px !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 38px;
+  background-color: transparent !important;
+  border: 1px solid white !important;
+  z-index: 999;
+}
+
+.slick-next:before {
+  font-size: 30px !important;
+}
+
+.mainGalleryBox .slick-track {
+  left: 142px !important;
+}
+
+.slick-dots li button {
+  border-radius: 20px;
+}
+
+.slick-dots li button {
+  background: rgba(0, 0, 0, 0.3490196078) !important;
+  height: 5px !important;
+  width: 5px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 35px;
+  border: 3px solid #058B71 !important;
+  border-radius: 20px;
+  top: -8px;
+  left: -8px;
+  color: #058B71 !important;
+}
+
+/*--gallery---*/
+.mainGalleryBox {
+  padding-bottom: 50px;
+}
+.mainGalleryBox .ALeftBox {
+  padding-left: 40px;
+}
+.mainGalleryBox .ALeftBox p {
+  color: #058B71;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.mainGalleryBox .ALeftBox h2 {
+  font-size: 50px;
+  color: #27272A;
+  font-weight: 400;
+}
+.mainGalleryBox h4 {
+  position: absolute;
+  background-color: none !important;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 20px 40px;
+  text-align: left;
+  font-size: 32px;
+  color: white;
+  font-weight: normal;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+.mainGalleryBox .slick-prev {
+  left: -449px !important;
+  top: 405px !important;
+  border: 1px solid #058B71 !important;
+}
+.mainGalleryBox .slick-prev:before {
+  color: #058B71 !important;
+}
+.mainGalleryBox .slick-next {
+  right: 1079px !important;
+  border: 1px solid rgba(5, 139, 113, 0.36) !important;
+  top: 408px !important;
+}
+.mainGalleryBox .slick-next:before {
+  color: rgba(5, 139, 113, 0.36) !important;
+}
+
+/*---story---*/
+.mainStory {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+}
+.mainStory .mainBgStory {
+  background-image: url("../img/bgStory.png");
+  height: 504px;
+  width: 1063px;
+  margin: 0 auto;
+}
+.mainStory .mainBgStory .ALeftBox {
+  padding-left: 60px;
+}
+.mainStory .mainBgStory .ALeftBox p {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.mainStory .mainBgStory .ALeftBox h2 {
+  font-size: 50px;
+  color: #27272A;
+  font-weight: 400;
+  color: white;
+}
+.mainStory .mainBgStory .aBox {
+  padding-left: 60px;
+}
+.mainStory .mainBgStory .storyImgPart img {
+  position: relative;
+  bottom: 113px;
+  left: 23px;
+}
+
+/*---feedback---*/
+.mainFeedback .subHeading p {
+  color: #058B71;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.mainFeedback .feedbackBox .feedbacks p {
+  font-size: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.mainFeedback .feedbackBox .feedbacks h3 {
+  color: #058B71;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/*---news and -- blogs---*/
+.mainNews .praG {
+  padding-top: 30px;
+}
+.mainNews .praG p {
+  font-size: 12px !important;
+  font-weight: 600;
+  padding-bottom: 30px;
+  color: #000 !important;
+  line-height: 2;
+}
+.mainNews .card .innerCard {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 20px 26px;
+}
+.mainNews .card .innerCard p {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.mainNews .card .innerCard h5 {
+  font-size: 32px;
+  /* text-align: center; */
+  color: white;
+  font-weight: normal;
+  padding: 32px 0px;
+}
+.mainNews .card .innerCard .day {
+  padding-top: 45px;
+}
+.mainNews .card .innerCard .day span:first-child {
+  font-size: 108px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: white;
+}
+.mainNews .card .innerCard .day span:last-child {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  padding: 7px 26px;
+  position: relative;
+  top: 38px;
+  letter-spacing: 3px;
+}
+
+/*--contact-form---*/
+.mainContactBox {
+  padding: 40px 0px;
+}
+.mainContactBox .subHeading {
+  text-align: left;
+}
+.mainContactBox .subHeading p {
+  color: #058B71;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.mainContactBox .mainForm label {
+  display: block;
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+.mainContactBox .mainForm input, .mainContactBox .mainForm select, .mainContactBox .mainForm textarea {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #B6B6B6;
+  outline: none;
+}
+.mainContactBox .mainForm .formArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.mainContactBox .mainForm .formArea .nameField {
+  width: 100%;
+}
+.mainContactBox .mainForm .subMitbtn {
+  text-align: right;
+}
+
+/*---footer--area--*/
+.mainFooter {
+  background-image: url("../img/bgStory.png");
+  height: 400px;
+}
+.mainFooter .fText p {
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.mainFooter .footerBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.mainFooter .creadit p {
+  font-size: 12px;
+  color: #CBCBCB;
+}
+
+/*--menu-design--*/
+.menuView {
+  display: none;
+  background-color: #27272A;
+  height: 130vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+  padding: 50px 0px;
+}
+.menuView .closeBtn button {
+  font-size: 40px;
+  font-family: sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.menuView .Mlist {
+  padding: 70px 30px;
+}
+.menuView .Mlist ul {
+  list-style-type: none;
+}
+.menuView .Mlist ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3490196078);
+  padding: 20px 0px;
+}
+.menuView .Mlist ul li:last-child {
+  border: none;
+}
+.menuView .Mlist ul li a {
+  font-size: 36px;
+  text-decoration: none;
+  color: white;
+}
+.menuView .Mlist ul li a span {
+  font-size: 17px;
+  position: relative;
+  top: -12px;
+  left: -5px;
+  color: #058B71;
+}
+.menuView .Mlist ul li img {
+  width: 13px;
+  height: 9px;
+}
+.menuView .rTab h2 {
+  color: white;
+  word-spacing: 1px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+.menuView .rTab a {
+  text-decoration: none;
+  color: #058B71;
+  font-family: "Nunito Sans", sans-serif;
+}
+.menuView .rTab .MenuInnerBtn .aBox a {
+  color: white;
+}
+.menuView .connet a {
+  color: white;
+  font-size: 12px;
+  padding: 15px 0px;
+}
+.menuView .col-md-8 {
+  text-align: left;
+  padding-left: 330px;
+}
+
+/*--animation---*/
+.AniBox {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: transform 1s ease;
+}
+
+.AniBoxShow {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 1s ease;
+}
+
+.sticky {
+  z-index: 999 !important;
+  background-color: #3D707F;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.DownnBtn {
+  -webkit-animation: updaown 1s ease-in infinite;
+          animation: updaown 1s ease-in infinite;
+  position: relative;
+}
+
+@-webkit-keyframes updaown {
+  0% {
+    top: 0px;
+    transition: 0.2s;
+  }
+  100% {
+    top: 40px;
+    transition: 0.2s;
+  }
+}
+
+@keyframes updaown {
+  0% {
+    top: 0px;
+    transition: 0.2s;
+  }
+  100% {
+    top: 40px;
+    transition: 0.2s;
+  }
+}/*# sourceMappingURL=style.css.map */
